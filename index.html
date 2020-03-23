@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Blinker&display=swap"
+      rel="stylesheet"
+    />
+    <title>Book List</title>
+  </head>
+  <body>
+    <header><h1>Library List</h1></header>
+    <section>
+      <div class="container">
+        <button class="modal-btn">Add Book</button>
+        <table>
+            <thead >
+                <tr class="tstyle">
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Pages</th>
+                    <th>Status</th>
+                    <th>Remove</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+      </div>
+    </section>
+    <div class="modal-bg">
+        <div class="modal">
+          <h2>Add your book</h2>
+
+          <label for="title">Title</label>
+          <input type="text" id="title"/>
+
+          <label for="author">Author</label>
+          <input type="text" id="author" />
+
+          <label for="pages">Pages</label>
+          <input type="number" id="pages"/>
+
+          <label for="Read-status">Read status</label>
+          <select id="status">
+            <option value="Read">Read</option>
+            <option value="Not-read">Not read</option>
+          </select>
+          <button class="modal-btn" id="newbook">Submit</button>
+          <span class="xClose">X</span>
+        </div>
+    <script src="./app.js"></script>
+  </body>
+</html>

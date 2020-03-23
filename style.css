@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  height: 20vh;
+  background: linear-gradient(
+    90deg,
+    rgba(84, 105, 99, 1) 0%,
+    rgba(176, 149, 137, 1) 50%,
+    rgba(84, 105, 99, 1) 100%
+  );
+  text-align: center;
+  color: white;
+  font-family: "Blinker", sans-serif;
+  font-size: 25px;
+}
+section {
+  height: 80vh;
+  text-align: center;
+  font-family: "Blinker";
+}
+h1 {
+  padding-top: 50px;
+  letter-spacing: 5px;
+}
+.container {
+  width: 70%;
+  margin: auto auto;
+  padding-top: 30px;
+}
+h2 {
+  font-size: 35px;
+}
+
+button {
+  height: 35px;
+  width: 150px;
+  font-size: 20px;
+  cursor: pointer;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+button:hover {
+  background-color: black;
+  color: white;
+}
+
+table {
+  width: 80%;
+  margin: auto auto;
+  padding-top: 30px;
+  font-size: 20px;
+  letter-spacing: 3px;
+}
+.tstyle th {
+  border: 1px solid black;
+}
+.tstyle {
+  background-color: rgb(131, 130, 130);
+  color: white;
+}
+
+.modal-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+}
+.bg-active {
+  opacity: 1;
+  visibility: visible;
+  animation: fadeIn 0.3s ease-in-out;
+}
+.modal {
+  background-color: white;
+  height: 50%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  font-family: sans-serif;
+  position: relative;
+  font-family: "Blinker";
+  border-radius: 10px;
+}
+.modal label {
+  font-size: 22px;
+  letter-spacing: 2px;
+}
+.modal input {
+  width: 50%;
+  height: 30px;
+  font-size: 15px;
+}
+select {
+  width: 50%;
+  height: 30px;
+  text-align-last: center;
+  font-size: 15px;
+  margin-bottom: 15px;
+  background-color: white;
+}
+.xClose {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+  font-size: 20px;
+}
+.delete:hover {
+  background-color: black;
+}
+.rowstyle {
+  background: rgb(169, 181, 181);
+  background: linear-gradient(
+    0deg,
+    rgba(169, 181, 181, 1) 0%,
+    rgba(228, 204, 204, 1) 50%,
+    rgba(169, 181, 181, 1) 100%
+  );
+  color: white;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
